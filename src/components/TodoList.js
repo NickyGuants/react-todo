@@ -4,7 +4,8 @@ import '../App.css';
 
 const TodoList = ()=>{
     return (
-        <div className="TodoList">
+        <div className="todoList">
+                <Todo />
                 <Todo />
         </div>
     )
