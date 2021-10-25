@@ -1,13 +1,18 @@
 import React from "react";
-
+import '../App.css';
 
 const Todo = () =>{
     return (
-        <div className="form-container">
-            <div className="form">
-                <input type="text" placeholder="Add todo..." />
-                <button>Submit</button>
-            </div>
+        <div className="todo-container">
+           <div className="checkbox">
+               <input type="checkbox" />
+           </div>
+           <div className="text">
+               <p>Todo Item</p>
+           </div>
+           <div className="delete-button">
+               <button>Delete</button>
+           </div>
         </div>
     );
 }
