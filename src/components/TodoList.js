@@ -1,12 +1,11 @@
 import React from "react";
 import Todo from "./Todo";
+import '../App.css';
 
 const TodoList = ()=>{
     return (
         <div className="TodoList">
-            <ul>
-                <li><Todo /></li>
-            </ul>
+                <Todo />
         </div>
     )
 }
