@@ -6,7 +6,6 @@ const TodoList = ()=>{
     return (
         <div className="todoList">
                 <Todo />
-                <Todo />
         </div>
     )
 }
