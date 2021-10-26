@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css';
 import { useSelector, useDispatch} from 'react-redux'
-import { removeTodo } from '../redux/actions/todosActions'
+import { removeTodo, is_Complete } from '../redux/actions/todosActions'
 
 
 function Todo () {
@@ -11,15 +11,17 @@ function Todo () {
         <div>
             {todos.map((todo) => (
                 <div key={todo.id} className="todo">
-                    <div className="checkbox">
-                        <input type="checkbox" id="complete" name="complete" />
+                    <div className="group">
+                        <div className="checkbox">
+                            <input type="checkbox" onClick={()=>dispatch(is_Complete(todo.id))} />
+                        </div>
+                        <div className="text">
+                            <p >{todo.title}</p>
+                        </div>
                     </div>
-                    <div className="text">
-                        <p >{todo.title}</p>
-                    </div>
-                    <div id="delete-button">
-                        <button onClick={()=>dispatch(removeTodo(todo.id))}>Delete</button>
-                    </div>
+                <div id="delete-button">
+                    <button onClick={()=>dispatch(removeTodo(todo.id))}>Delete</button>
+                </div>                   
                 </div>
             ))}
         </div> 
