@@ -1,17 +1,19 @@
 import React from "react";
-import { useSelector, useDispatch } from 'react-redux'
-import { addCount, subtractCount} from '../redux/actions/counterActions'
+import { useSelector} from 'react-redux'
 
 function Counter() {
-    const counter =useSelector((state)=> state.counter);
-    const dispatch = useDispatch();
+    const todos = useSelector((state) => state.todos);
+    let complete_todos=[];
+    todos.map((todo) =>{
+        if(todo.is_complete===true){
+            complete_todos.push(todo);
+        }
+        return todo
+    })
 
-    
     return(
         <div>
-            <button onClick={()=> dispatch(addCount())}>+</button>
-            <h3>{counter}</h3>
-            <button onClick={() => dispatch(subtractCount())}>-</button>
+           <h1>Total Complete Items: {complete_todos.length}</h1>
         </div>
     )
 }
