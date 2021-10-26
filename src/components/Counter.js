@@ -12,7 +12,7 @@ function Counter() {
     })
 
     return(
-        <div>
+        <div className="counter">
            <h1>Total Complete Items: {complete_todos.length}</h1>
         </div>
     )
