@@ -1,4 +1,4 @@
-import {ADD_TODO, REMOVE_TODO} from '../types'
+import {ADD_TODO, REMOVE_TODO, MARK_TODO_COMPLETE} from '../types'
 
 
 export const addTodo = (todo) =>{
@@ -16,9 +16,9 @@ export const removeTodo = (id) =>{
     };
 };
 
-export const markTodoAsComplete = (id) => {
+export const is_Complete = (id) => {
     return {
-      //type: MARK_TODO_COMPLETE,
+      type: MARK_TODO_COMPLETE,
       payload: id,
     };
   };
