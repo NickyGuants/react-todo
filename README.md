@@ -1,5 +1,5 @@
 # React Todo List App
 Todo App screenshot
 :-------------------------------------------------------------------------------------------------------------------------------------
-![Todo APP screenshot](screenshots/todoApp.png)  
+![Todo APP screenshot](/public/screenshots/todoApp.png)  
 
