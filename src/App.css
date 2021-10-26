@@ -1,20 +1,32 @@
 .App {
+  width: 100%;
+  margin: auto;
   box-sizing: border-box;
+  
+}
+header{
+  margin: 10px 10px 20px 10px;
+  width: 60%;
+  margin: auto;
+}
+.form-container{
+  width: 60%;
+  margin: auto;
 }
 .todoList{
-  border: 1px solid grey;
-  border-radius: 5px;
-  margin: 10px 10px 20px 10px;
+  width: auto;
+  padding: 20px;
+  
 }
 .todo{
-  width: 100%;
+  width: 60%;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content:space-between;
   border: 1px solid grey;
   font-size: large;
-  
 }
 .group{
   display: flex;
@@ -31,6 +43,27 @@
 }
 #delete-button button{
   background-color: red;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  font-size: large;
+}
+.counter{
+  width: 60%;
+  margin: auto;
+}
+form{
+  font-size: large;
+}
+.form input{
+  font-size: large;
+}
+.form form input{
+  margin-left: 10px;
+}
+.form form button{
+  margin: 10px;
+  font-size: large;
+  background-color: blue;
   color: white;
 }
 
