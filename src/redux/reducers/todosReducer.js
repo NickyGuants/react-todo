@@ -15,9 +15,10 @@ const todosReducer = (state=initialState, {payload, type}) =>{
         case MARK_TODO_COMPLETE:
             return state.map((todo) => {
                 if (todo.id === payload) 
-                    todo.is_complete = true;
+                    todo.is_complete = !todo.is_complete;
                     return todo;
-            });
+            }
+            );
         default:
             return state;
 
